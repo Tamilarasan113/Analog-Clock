@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.outerClock {
+  margin-left: 25%;
+  margin-top: 35%;
+  cursor: pointer;
+  width: 280px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgb(0, 255, 238), -5px -5px 20px rgb(255, 0, 255);
+}
+.innerClock {
+  width: 235px;
+  height: 235px;
+  position: relative;
+  top: 8%;
+  left: 9%;
+  border-radius: 50%;
+  background-color: rgb(8, 0, 0);
+  /* background: url("wheel.jpeg"); */
+  background-size: cover;
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  width: 15px;
+  height: 15px;
+  background-color: cyan;
+  border-radius: 50%;
+  z-index: 4;
+}
+#hrs {
+  position: absolute;
+  top: 21%;
+  left: 49.5%;
+
+  transform-origin: bottom;
+  background-color: red;
+  border-radius: 70% 70% 0 0;
+  width: 8px;
+  height: 80px;
+  z-index: 1;
+}
+#min {
+  position: absolute;
+  top: 25.7px;
+  left: 48.5%;
+
+  transform-origin: bottom;
+  background-color: white;
+  border-radius: 70% 70% 0 0;
+  width: 6px;
+  height: 100px;
+  z-index: 2;
+}
+#sec {
+  position: absolute;
+  top: 17px;
+  left: 49.5%;
+
+  transform-origin: bottom;
+  background-color: yellow;
+  border-radius: 70% 70% 0 0;
+  width: 4px;
+  height: 107px;
+  z-index: 3;
+}
+p {
+  color: black;
+  text-shadow: 1px 1px 3px white;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.twelve {
+  position: absolute;
+  top: -16.5%;
+  left: 45%;
+}
+.three {
+  position: absolute;
+  top: 41%;
+  left: 102%;
+}
+.six {
+  position: absolute;
+  top: 93%;
+  left: 49%;
+}
+
+.nine {
+  position: absolute;
+  top: 41%;
+  left: -7.8%;
+}
+
+@media (min-width: 568px) {
+  .outerClock {
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+}
